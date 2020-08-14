@@ -6,16 +6,19 @@
   font-family:  sans-serif;
 }
 .show-btn{
-  background: #fff;
+  
+  background: #42455a;
   padding: 10px 20px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 500;
-  color: #3498db;
+  color: #b2b1b1;
   cursor: pointer;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  
 }
 .show-btn{
-  
+  right: 50%;
+  height: 50px;
+  width: 50px;
   transform: translate(-50%, -50%);
 }
 
@@ -26,8 +29,6 @@ input[type="checkbox"]{
   display: none;
   background: #fff;
   width: 410px;
-top: 50%;
-  left: 50%;
   padding: 30px;
   box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
@@ -42,7 +43,7 @@ top: 50%;
   cursor: pointer;
 }
 .ambas .close-btn:hover{
-  color: #3498db;
+  color: #b2b1b1;
 }
 .ambas .text{
   font-size: 35px;
@@ -120,9 +121,61 @@ top: 50%;
   
 }
 
+.neon{
+  position:absolute;
+  color: #fff;
+  text-shadow: 0 0 20px #2204cc;
+
+}
+
+a{
+  color: #b2b1b1;
+}
+
+a.hover{
+  color: #fff;
+}
+.neon:after
+{
+  content: :attr(data-text);
+  position: absolute;
+  padding: 0 20px;
+  z-index:-1;
+  color: #ff005b;
+  filter: blur(20px);
+}
+
+input{
+  border: 0px;
+  top: 40%;
+  left: 8%;
+  transform: translate(0%,0%);
+  position: absolute;
+
+  border-bottom: 3px solid #399CEE;
+  outline: none;
+  background: #222222;
+  color: white;
+
+}
+
+input +span{
+  color: white;
+  position: absolute;
+  top :39.1%;
+  left: 9%;
+  color: #399CEE;
+  pointer-events: none;
+  transition: .3s linear;
+  font-size: 18px;
+
+}
 
 
+input:focus + span{
+  top:195px;
+  font-size: 16px;
 
 
-
+}
 
