@@ -9,7 +9,7 @@ l=5
 @app.route("/",methods=["POST", "GET"])
 def home():
 	
-    return render_template("classification.html",content=a)
+    return render_template("Bullying.html",content=a)
 
     
 
